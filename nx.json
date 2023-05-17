@@ -8,16 +8,46 @@
           "build",
           "lint",
           "test",
-          "e2e"
+          "e2e",
+          "build-storybook"
         ]
       }
     }
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "inputs": ["default", "^default"]
+    },
+    "lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore"
       ]
+    }
+  },
+  "generators": {
+    "@nx/web:application": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "vitest",
+      "e2eTestRunner": "none",
+      "bundler": "vite"
+    },
+    "@nx/js:library": {
+      "bundler": "vite",
+      "unitTestRunner": "vitest",
+      "linter": "eslint"
+    },
+    "@nx/storybook:configuration": {
+      "uiFramework": "@storybook/web-components-vite",
+      "bundler": "vite",
+      "configureCypress": false,
+      "tsConfiguration": true,
+      "linter": "eslint"
     }
   }
 }
