@@ -1,8 +1,8 @@
 {
-  "name": "web",
+  "name": "bank",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/web/src",
+  "sourceRoot": "apps/bank/src",
   "tags": [],
   "targets": {
     "build": {
@@ -10,7 +10,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/web"
+        "outputPath": "dist/apps/bank"
       },
       "configurations": {
         "development": {
@@ -25,15 +25,15 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "web:build"
+        "buildTarget": "bank:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "web:build:development",
+          "buildTarget": "bank:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "web:build:production",
+          "buildTarget": "bank:build:production",
           "hmr": false
         }
       }
@@ -42,30 +42,30 @@
       "executor": "@nx/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "web:build"
+        "buildTarget": "bank:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "web:build:development"
+          "buildTarget": "bank:build:development"
         },
         "production": {
-          "buildTarget": "web:build:production"
+          "buildTarget": "bank:build:production"
         }
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/apps/web"],
+      "outputs": ["coverage/apps/bank"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/web"
+        "reportsDirectory": "../../coverage/apps/bank"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/web/**/*.ts"]
+        "lintFilePatterns": ["apps/bank/**/*.ts"]
       }
     }
   }
