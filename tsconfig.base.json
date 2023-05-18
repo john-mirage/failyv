@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@failyv/failyv-button": ["libs/failyv-button/src/index.ts"]
+      "@failyv/failyv-button": ["libs/failyv-button/src/index.ts"],
+      "@failyv/failyv-icon": ["libs/failyv-icon/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
