@@ -66,12 +66,5 @@ customElements.define("web-dispatch-unit", WebDispatchUnit, {
 window.addEventListener("load", () => {
   const app = document.getElementById("app");
   const webApp = document.createElement("web-app");
-
-  document.addEventListener("keyup", (keyboardEvent) => {
-    if (keyboardEvent.key === "e") {
-      if (app.children.length <= 0) {
-        app.replaceChildren(webApp);
-      }
-    }
-  });
+  app.replaceChildren(webApp);
 });
