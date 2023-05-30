@@ -1,0 +1,208 @@
+@import "styles/typography.css";
+@import "styles/app.css";
+@import "styles/button.css";
+@import "styles/icon-button.css";
+@import "styles/dropdown.css";
+@import "styles/favorite-account.css";
+@import "styles/filter.css";
+@import "styles/form.css";
+@import "styles/grid.css";
+@import "styles/log.css";
+@import "styles/paper.css";
+@import "styles/group.css";
+@import "styles/tab.css";
+@import "styles/toggle-button.css";
+@import "styles/top-app-bar.css";
+@import "styles/view.css";
+
+:root {
+    --color-app: hsl(210, 17%, 96%);
+    --color-app-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+    --color-tab: hsl(210, 7%, 60%);
+    --color-tab-active: hsl(210, 11%, 15%);
+
+    --color-top-app-bar: #ffffff;
+    --color-top-app-bar-border: hsl(210, 17%, 92%);
+
+    --color-paper: hsl(0, 0%, 100%);
+
+    --color-grid-section-divider: hsl(210, 17%, 92%);
+
+    --color-toggle-button-track: hsl(210, 16%, 93%);
+    --color-toggle-button-icon: hsl(210, 11%, 71%);
+    --color-toggle-button-icon-hover: hsl(210, 10%, 23%);
+    --color-toggle-button-icon-active: #f59f00;
+
+    --color-button-label: #fff;
+    --color-button-secondary-label-hover: hsl(0, 0%, 100%);
+    --color-button-disabled: hsl(0, 0%, 100%);
+    --color-button-disabled-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+    --color-button-disabled-label: hsl(210, 14%, 88%);
+    --color-button-icon: #fff;
+
+    --color-icon-button-primary-icon: hsl(0, 0%, 100%);
+    --color-icon-button-secondary-icon: #adb5bd;
+    --color-icon-button-secondary-icon-edit: #4dabf7;
+    --color-icon-button-secondary-icon-delete: hsl(339, 88%, 74%);
+    --color-icon-button-disabled: hsl(0, 0%, 100%);
+    --color-icon-button-disabled-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+    --color-icon-button-disabled-icon: hsl(210, 14%, 88%);
+    --color-icon-button-disabled-icon-hover: hsl(0, 0%, 100%);
+
+    --color-dropdown-button: hsl(210, 7%, 50%);
+    --color-dropdown-button-active: hsl(210, 9%, 31%);
+    --color-dropdown-content: hsl(0, 0%, 100%);
+    --color-dropdown-content-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --color-filter: hsl(210, 7%, 50%);
+    --color-filter-background-hover: hsl(210, 17%, 96%);
+    --color-filter-active: hsl(210, 9%, 31%);
+
+    --color-typo-primary: hsl(210, 9%, 31%);
+    --color-typo-secondary: hsl(210, 7%, 50%);
+    --color-typo-positive: hsl(162, 68%, 54%);
+    --color-typo-negative: hsl(339, 88%, 74%);
+
+    --color-notification-success: hsl(162, 68%, 54%);
+    --color-notification-error: hsl(339, 88%, 74%);
+    --color-notification-title: #fff;
+    --color-notification-description: #fff;
+
+    --color-form-input: hsl(0, 0%, 100%);
+    --color-form-input-typo: hsl(210, 9%, 31%);
+    --color-form-input-on-paper: hsl(210, 17%, 96%);
+    --color-form-input-placeholder: hsl(210, 11%, 71%);
+    --color-form-input-border: hsl(210, 17%, 92%);
+    --color-form-input-border-on-paper: hsl(210, 17%, 90%);
+
+    --color-scrollbar-thumb: #e9ecef;
+    --color-scrollbar-thumb-hover: #ced4da;
+
+    --color-log-divider: hsl(210, 16%, 95%);
+    --color-log-icon: #e9ecef;
+    --color-log-icon-background: hsl(210, 17%, 96%);
+
+    --color-favorite-account-divider: hsl(210, 16%, 95%);
+    --color-favorite-account-icon: #adb5bd;
+}
+
+:root.dark {
+    --color-app: hsl(216, 12%, 8%);
+    --color-app-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+    --color-tab: hsl(210, 7%, 60%);
+    --color-tab-active: hsl(0, 0%, 100%);
+
+    --color-top-app-bar: hsl(210, 11%, 11%);
+    --color-top-app-bar-border: hsl(210, 11%, 15%);
+
+    --color-paper: hsl(210, 11%, 11%);
+
+    --color-grid-section-divider: hsl(210, 11%, 14%);
+
+    --color-toggle-button-track: hsl(210, 10%, 23%);
+    --color-toggle-button-icon: hsl(210, 11%, 71%);
+    --color-toggle-button-icon-hover: hsl(0, 0%, 100%);
+    --color-toggle-button-icon-active: #f59f00;
+
+    --color-button-label: #fff;
+    --color-button-secondary-label-hover: hsl(0, 0%, 100%);
+    --color-button-disabled: hsl(210, 11%, 14%);
+    --color-button-disabled-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+    --color-button-disabled-label: hsl(210, 9%, 31%);
+    --color-button-icon: #fff;
+
+    --color-icon-button-primary-icon: hsl(0, 0%, 100%);
+    --color-icon-button-secondary-icon: hsl(210, 7%, 56%);
+    --color-icon-button-disabled: hsl(210, 11%, 14%);
+    --color-icon-button-disabled-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+    --color-icon-button-disabled-icon: hsl(210, 9%, 31%);
+    --color-icon-button-disabled-icon-hover: hsl(0, 0%, 100%);
+
+    --color-dropdown-button: hsl(210, 7%, 52%);
+    --color-dropdown-button-active: hsl(210, 14%, 80%);
+    --color-dropdown-content: hsl(210, 10%, 14%);
+    --color-dropdown-content-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --color-filter: hsl(210, 7%, 52%);
+    --color-filter-background-hover: hsl(210, 9%, 20%);
+    --color-filter-active: hsl(210, 14%, 80%);
+
+    --color-typo-primary: hsl(210, 14%, 80%);
+    --color-typo-secondary: hsl(210, 7%, 52%);
+    --color-typo-positive: hsl(162, 87%, 35%);
+    --color-typo-negative: hsl(339, 65%, 60%);
+
+    --color-notification-success: hsl(162, 87%, 35%);
+    --color-notification-error: hsl(339, 65%, 60%);
+    --color-notification-title: hsl(210, 14%, 83%);
+    --color-notification-description: hsl(210, 7%, 56%);
+
+    --color-form-input: hsl(210, 11%, 11%);
+    --color-form-input-typo: hsl(210, 14%, 80%);
+    --color-form-input-on-paper: hsl(216, 12%, 8%);
+    --color-form-input-placeholder: hsl(210, 9%, 40%);
+    --color-form-input-border: hsl(210, 11%, 15%);
+    --color-form-input-border-on-paper: hsl(210, 11%, 17%);
+
+    --color-scrollbar-thumb: hsl(210, 10%, 20%);
+    --color-scrollbar-thumb-hover: #ced4da;
+
+    --color-log-divider: hsl(210, 11%, 15%);
+    --color-log-icon: #e9ecef;
+    --color-log-icon-background: hsl(210, 9%, 16%);
+
+    --color-favorite-account-divider: hsl(210, 11%, 15%);
+    --color-favorite-account-icon: #495057;
+}
+
+:root.fleeca {
+    --color-bank: #69db7c;
+}
+
+:root.maze {
+    --color-bank: #ff6b6b;
+}
+
+:root.fleeca.dark {
+    --color-bank: #2f9e44;
+}
+
+:root.maze.dark {
+    --color-bank: #c92a2a;
+}
+
+html {
+    font-size: 10px;
+    font-family:
+        "Red Hat Display",
+        system-ui,
+        -apple-system,
+        'Segoe UI',
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        'Apple Color Emoji',
+        'Segoe UI Emoji';
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.maze body {
+    background: radial-gradient(#ffa8a8, #c92a2a);
+}
+
+.fleeca body {
+    background: radial-gradient(#8ce99a, #2b8a3e);
+}
+

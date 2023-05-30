@@ -1,0 +1,61 @@
+.button {
+    box-sizing: border-box;
+    display: block;
+    min-width: 168px;
+    height: 48px;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/*------------------------------------*\
+  #Button-primary
+\*------------------------------------*/
+
+.button--primary {
+    background-color: var(--color-bank);
+    color: #fff;
+}
+
+.button--primary:focus-visible {
+    outline: 2px solid var(--color-bank);
+    outline-offset: 3px;
+}
+
+.button--primary > .button__icon {
+    color: #fff;
+}
+
+/*------------------------------------*\
+  #Button-secondary
+\*------------------------------------*/
+
+.button--secondary {
+    color: var(--color-bank);
+
+}
+
+.button--secondary:hover {
+    border: 0.2rem solid var(--color-bank);
+}
+
+.button--secondary:focus-visible {
+    outline: 0.2rem solid var(--color-bank);
+    outline-offset: 0.3rem;
+}
+
+/*------------------------------------*\
+  #Button-disabled
+\*------------------------------------*/
+
+.button--disabled {
+    background-color: var(--color-button-disabled);
+    box-shadow: var(--color-button-disabled-shadow);
+    color: var(--color-button-disabled-label);
+}
+
+.button--disabled > .button__icon {
+    color: var(--color-button-disabled-label);
+}

@@ -1,0 +1,17 @@
+.view {
+    box-sizing: border-box;
+    display: none;
+    width: 100%;
+    height: calc(100% - 72px);
+    padding: 24px;
+}
+
+.view--active {
+    display: block;
+}
+
+.view__button {
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.5rem;
+}
