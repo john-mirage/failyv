@@ -1,0 +1,9 @@
+.webViewNavigation {
+  display: block;
+}
+
+.webViewNavigation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}

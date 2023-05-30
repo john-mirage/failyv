@@ -1,0 +1,68 @@
+.webSwitch {
+  display: block;
+}
+
+.webSwitch__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.webSwitch__label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-typo-secondary);
+}
+
+.webSwitch__input {
+  --track-size: 40px;
+  --track-padding: 4px;
+  --track-color-inactive: var(--color-toggle-button-track);
+  --track-color-hover: hsl(0, 0%, 60%);
+  --track-color-active: var(--color-accent);
+  --thumb-size: 12px;
+  --thumb-color: var(--color-accent);
+  --thumb-highlight-color: hsl(0, 0%, 30%);
+  --thumb-highlight-size: 0;
+  --thumb-position: 0%;
+
+  margin: 0;
+  display: block;
+  appearance: none;
+  width: var(--track-size);
+  height: calc(var(--thumb-size) + (var(--track-padding) * 2));
+  padding: var(--track-padding);
+  cursor: pointer;
+  border: none;
+  background-color: var(--track-color-inactive);
+  border-radius: 9999px;
+  outline-offset: 4px;
+}
+
+.webSwitch__input:checked {
+  background-color: var(--track-color-active);
+  --thumb-position: calc(var(--track-size) - (var(--track-padding) * 2) - 100%);
+}
+
+.webSwitch__input::before {
+  content: "";
+  display: block;
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background-color: var(--thumb-color);
+  border-radius: 9999px;
+  box-shadow: 0 0 0 var(--thumb-highlight-size) var(--thumb-highlight-color);
+  transform: translateX(var(--thumb-position));
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.webSwitch__input:hover {
+  --thumb-highlight-size: 8px;
+}
+
+.webSwitch__input:not(:checked):hover {
+  background-color: var(--track-color-hover);
+}

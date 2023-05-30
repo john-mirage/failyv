@@ -1,0 +1,23 @@
+.webDispatch {
+  display: block;
+  height: 100%;
+}
+
+.webDispatch__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.webDispatch__header {
+  flex: none;
+}
+
+.webDispatch__list {
+  flex: 1;
+  display: grid;
+  grid-template-rows: 100%;
+  gap: 24px;
+  padding: 24px;
+  overflow-y: hidden;
+}

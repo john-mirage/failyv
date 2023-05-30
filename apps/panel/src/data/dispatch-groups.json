@@ -1,0 +1,38 @@
+[
+  {
+    "categoryId": "3",
+    "categoryOrderId": 0,
+    "id": "1",
+    "size": "1"
+  },
+  {
+    "categoryId": "3",
+    "categoryOrderId": 1,
+    "id": "2",
+    "size": "1"
+  },
+  {
+    "categoryId": "4",
+    "categoryOrderId": 2,
+    "id": "3",
+    "size": "2"
+  },
+  {
+    "categoryId": "4",
+    "categoryOrderId": 3,
+    "id": "4",
+    "size": "2"
+  },
+  {
+    "categoryId": "4",
+    "categoryOrderId": 4,
+    "id": "5",
+    "size": "2"
+  },
+  {
+    "categoryId": "5",
+    "categoryOrderId": 5,
+    "id": "6",
+    "size": "3"
+  }
+]

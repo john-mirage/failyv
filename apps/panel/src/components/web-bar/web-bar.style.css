@@ -1,0 +1,37 @@
+.webBar {
+  display: block;
+  height: 64px;
+  background-color: var(--color-bar);
+  border-bottom: 1px solid var(--color-bar-border);
+}
+
+.webBar__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.webBar__section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.webBar__section--left {
+  flex: 1;
+}
+
+.webBar__section--right {
+  flex: none;
+  gap: 32px;
+}
+
+.webBar__label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--color-typo-primary);
+}

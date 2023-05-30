@@ -1,0 +1,33 @@
+.webButton {
+  display: block;
+}
+
+.webButton__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  color: var(--color-typo-primary);
+}
+
+.webButton__icon {
+  margin-right: 6px;
+  width: 20px;
+  height: 20px;
+}
+
+.webButton__label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 1.2px;
+}
+
+@media screen and (hover: hover) {
+  .webButton__container:hover {
+    color: #fff;
+  }
+}

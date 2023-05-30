@@ -1,0 +1,40 @@
+.webSidebar {
+  display: block;
+  height: 100%;
+}
+
+.webSidebar__container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  padding: 24px;
+  background-color: var(--color-bar);
+  border-right: 1px solid var(--color-bar-border);
+}
+
+.webSidebar__section {
+  margin-bottom: 48px;
+}
+
+.webSidebar__section--settings {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.webSidebar__sectionTitle {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--color-typo-secondary);
+}
+
+.webSidebar__switch {
+  margin-bottom: 20px;
+}
+
+.webSidebar__switch:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "type": "unit",
+    "name": "Hors service"
+  },
+  {
+    "id": "2",
+    "type": "unit",
+    "name": "En attente"
+  },
+  {
+    "id": "3",
+    "type": "group",
+    "name": "Lincoln"
+  },
+  {
+    "id": "4",
+    "type": "group",
+    "name": "Adam"
+  },
+  {
+    "id": "5",
+    "type": "group",
+    "name": "Henry"
+  }
+]
